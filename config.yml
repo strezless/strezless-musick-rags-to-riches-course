@@ -1,0 +1,19 @@
+title: Strezless Musick rags to riches
+description: >-
+  Any empire starts from scratch so does this music label in the making starring
+  Sin Eaters as the featured entertainer. We welcome everyone wanting to be a
+  part of the mentioned artist career launching. Thank you.
+template:
+  repo: strezless-musick-rags-to-riches-template
+  name: strezless-musick-rags-to-riches
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
